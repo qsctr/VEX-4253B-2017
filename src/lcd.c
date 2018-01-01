@@ -33,12 +33,24 @@ void set_lcd_selected(TControllerButtons b) {
         case kButtonLeft:
             displayLCDChar(1, 0, '[');
             displayLCDChar(1, 3, ']');
+            displayLCDChar(1, 6, ' ');
+            displayLCDChar(1, 9, ' ');
+            displayLCDChar(1, 12, ' ');
+            displayLCDChar(1, 15, ' ');
             break;
         case kButtonCenter:
+            displayLCDChar(1, 0, ' ');
+            displayLCDChar(1, 3, ' ');
             displayLCDChar(1, 6, '[');
             displayLCDChar(1, 9, ']');
+            displayLCDChar(1, 12, ' ');
+            displayLCDChar(1, 15, ' ');
             break;
         case kButtonRight:
+            displayLCDChar(1, 0, ' ');
+            displayLCDChar(1, 3, ' ');
+            displayLCDChar(1, 6, ' ');
+            displayLCDChar(1, 9, ' ');
             displayLCDChar(1, 12, '[');
             displayLCDChar(1, 15, ']');
             break;
