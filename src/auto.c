@@ -72,7 +72,7 @@ task autonomous() {
             drive_enc_l(2250);
             drive_l(stop);
         } else {
-            drive_enc_r(2250);
+            drive_enc_r(2350);
             drive_r(stop);
         }
         drive_enc(700);
@@ -82,12 +82,12 @@ task autonomous() {
             drive_enc_l(650);
             drive_l(stop);
         } else {
-            drive_enc_r(650);
+            drive_enc_r(750);
             drive_r(stop);
         }
         sleep(200);
-        drive_enc(400);
         lift(up);
+        drive_enc(400);
         drive(forward);
         sleep(2000);
         lift(stop);
@@ -100,6 +100,7 @@ task autonomous() {
 
     // right
     if (matchType == Skills) {
+        /*
         drive_enc_l(2250);
         drive_enc(1000);
         lift_goal();
@@ -118,5 +119,8 @@ task autonomous() {
         drive_enc(-1200);
         drive(stop);
         lift_time(-1000, down);
+        */
+        drive_enc_l(2000);
+        drive_enc(3000);
     }
 }
